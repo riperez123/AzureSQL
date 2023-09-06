@@ -19,7 +19,7 @@ variable "rg_name" {
 
 variable "rg_location" {
   type        = string
-  description = "Reource Group region location"
+  description = "Resource Group region location"
   default     = "eastus"
 }
 
