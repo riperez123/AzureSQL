@@ -8,7 +8,7 @@ variable "admin_password" {
   type        = string
   description = " SQL Admin password for authentication"
   sensitive   = true
-  default     = "Azure1!Azure1!"
+  default     = "YourSuperSecretPassword"
 }
 
 variable "rg_name" {
@@ -25,12 +25,12 @@ variable "rg_location" {
 
 variable "sql_server" {
   type        = string
-  description = "SQL Server name"
-  default     = "rperezsqlserver01"
+  description = "SQL Server name, must be unique"
+  default     = "UniqueName"
 }
 
 variable "sql_db" {
   type        = string
-  description = "SQL DB name"
-  default     = "rperezdb01"
+  description = "SQL DB name, must be unique"
+  default     = "UniqueName"
 }
